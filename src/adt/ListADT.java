@@ -11,7 +11,7 @@ public interface ListADT<E> {
      * @return true when the contact number adds to the list.
      */
 
-    boolean add(E item);
+    void add(E item);
 
     /**
      * This method will remove an contact number from the contact  list.

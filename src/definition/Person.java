@@ -8,9 +8,21 @@ import adt.ListADT;
  * earlier.
  */
 public class Person<E> implements ListADT<E> {
+    private Node first;
+    private Node last;
+
+    public Person() {
+        first = last = null;
+    }
+
+    public boolean isEmpty() {
+        return first == null;
+    }
 
     @Override
     public boolean add(E item) {
+        Node temp = new Node();
+
         return false;
     }
 
@@ -22,5 +34,10 @@ public class Person<E> implements ListADT<E> {
     @Override
     public int search(E item) {
         return 0;
+    }
+
+    private class Node<E> {
+
+
     }
 }
